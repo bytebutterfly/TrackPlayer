@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>TrackPlayer</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <div class="player-container">
@@ -12,18 +13,20 @@
         <div class="image-container">
             <img src="images/naroja.jpeg" alt="Na Roja nuvvey"/>
         </div>
-        <div>
-            <h2>Na Roja Nuvve</h2>
+
+         <h2>Na Roja Nuvve</h2>
             <h3>Abdul Wahad</h3>
             <audio src="songs/Na Roja Nuvve.mp3"></audio>
 
             <!-- Progress -->
             <div class="progress-container">
-                <span>0:00</span>
-                <span>1:02</span>
+                <div id="progress" class="progress"></div>
+                <div class="duration-wrapper">
+                    <span id="starting-time">0:00</span>
+                    <span id="duration">1:02</span>
+                </div>  
             </div>
-            <div id="progress"></div>
-        </div>
+            
         <!-- controls -->
         <div class="player-controls">
             <i class="fa-solid fa-backward" id="prev" title="prev"></i>
